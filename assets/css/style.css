@@ -1546,3 +1546,8 @@ section {
   font-size: 13px;
   color: #fff;
 }
+.profileimg{
+  max-width: 300px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
