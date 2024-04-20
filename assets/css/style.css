@@ -406,7 +406,7 @@ h6 {
 #hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/bgoffice.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -706,7 +706,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bgoff.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -1243,11 +1243,6 @@ section {
   color: #484848;
 }
 
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
-}
-
 .contact .php-email-form {
   width: 100%;
   background: #fff;
@@ -1545,4 +1540,76 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+.profileimg{
+  max-width: 300px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.addres, .email, .phone{
+  margin: 10px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.profileimg {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+.spin {
+  animation: muter 5s linear infinite;
+}
+.flip {
+  animation: flip 5s linear infinite;
+}
+.asik {
+  animation: asik 4s linear infinite;
+}
+.buatjs {
+  animation: buatjs 2s linear infinite;
+}
+
+@keyframes buatjs {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes asik {
+  0% {
+    transform: rotateX(0deg); /* Putaran awal 0 derajat */
+  }
+  100% {
+    transform: rotateX(360deg); /* Putaran akhir 360 derajat (1 putaran penuh) */
+  }
+}
+@keyframes muter {
+  0% {
+    transform: rotate(0deg); /* Putaran awal 0 derajat */
+  }
+  100% {
+    transform: rotate(360deg); /* Putaran akhir 360 derajat (1 putaran penuh) */
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: scale(1); /* Skala awal */
+  }
+  50% {
+    transform: scale(-1, 1); /* Flip horizontal */
+  }
+  100% {
+    transform: scale(1); /* Kembali ke skala awal */
+  }
 }
