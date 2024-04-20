@@ -406,7 +406,7 @@ h6 {
 #hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/bgoffice.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -706,7 +706,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bgoff.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -1243,10 +1243,6 @@ section {
   color: #484848;
 }
 
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
-}
 
 .contact .php-email-form {
   width: 100%;
@@ -1548,6 +1544,9 @@ section {
 }
 .profileimg{
   max-width: 300px;
-  padding-top: 10px;
+  margin-top: 10px;
   border-radius: 10px;
+}
+.addres, .email, .phone{
+  margin: 10px;
 }
