@@ -1243,7 +1243,6 @@ section {
   color: #484848;
 }
 
-
 .contact .php-email-form {
   width: 100%;
   background: #fff;
@@ -1550,3 +1549,7 @@ section {
 .addres, .email, .phone{
   margin: 10px;
 }
+
+/* .swiper-slide img{
+  aspect-ratio: 16/9;
+} */
