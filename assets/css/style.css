@@ -1550,6 +1550,66 @@ section {
   margin: 10px;
 }
 
-/* .swiper-slide img{
-  aspect-ratio: 16/9;
-} */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.profileimg {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+.spin {
+  animation: muter 5s linear infinite;
+}
+.flip {
+  animation: flip 5s linear infinite;
+}
+.asik {
+  animation: asik 4s linear infinite;
+}
+.buatjs {
+  animation: buatjs 2s linear infinite;
+}
+
+@keyframes buatjs {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes asik {
+  0% {
+    transform: rotateX(0deg); /* Putaran awal 0 derajat */
+  }
+  100% {
+    transform: rotateX(360deg); /* Putaran akhir 360 derajat (1 putaran penuh) */
+  }
+}
+@keyframes muter {
+  0% {
+    transform: rotate(0deg); /* Putaran awal 0 derajat */
+  }
+  100% {
+    transform: rotate(360deg); /* Putaran akhir 360 derajat (1 putaran penuh) */
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: scale(1); /* Skala awal */
+  }
+  50% {
+    transform: scale(-1, 1); /* Flip horizontal */
+  }
+  100% {
+    transform: scale(1); /* Kembali ke skala awal */
+  }
+}
